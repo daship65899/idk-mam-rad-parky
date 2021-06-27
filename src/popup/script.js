@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(t => {
             let element = document.getElementById('version');
             element.innerHTML = t.version;
-            if (t.version !== parseInt(3.0)) {
+            if (t.version !== 3.0) {
                 document.body.innerHTML = `
                 <h1>Cheat is outdated!</h1>
                 <img src="https://emoji.gg/assets/emoji/2260_sadge.png">
