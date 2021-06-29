@@ -39,6 +39,7 @@ You need a wordwall account to use the cheat!
 ## Any suggestions or bugs?
 
 create an issue
+
 also pull requests are welcome
 
 ## License
