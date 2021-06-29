@@ -1,5 +1,6 @@
 :root {
     --border: #52d79a;
+    --text: #fff;
 }
 
 @font-face {
@@ -53,7 +54,7 @@ body {
     align-content: center;
     line-height: 35px;
     font-family: GilroyB;
-    color: white;
+    color: var(--text);
 }
 
 a {
@@ -63,6 +64,21 @@ a {
 
 input {
     outline: none;
+    font-size: 20px;
+    padding: 8px 40px;
+    font-family: GilroyB;
+    box-shadow: var(--border) 0px 0px 2px;
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 10px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+input:hover {
+    cursor: pointer;
+    box-shadow: var(--border) 0px 0px 10px;
+    background-color: var(--border);
 }
 
 .main {
@@ -112,24 +128,6 @@ input {
 
 .menu {
     padding-top: 30px;
-}
-
-input {
-    font-size: 20px;
-    padding: 8px 40px;
-    font-family: GilroyB;
-    box-shadow: var(--border) 0px 0px 2px;
-    border: 1px solid var(--border);
-    color: #ffffff;
-    border-radius: 10px;
-    background-color: transparent;
-    transition: 0.5s;
-}
-
-input:hover {
-    cursor: pointer;
-    box-shadow: var(--border) 0px 0px 10px;
-    background-color: var(--border);
 }
 
 #err_i {

@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     document.getElementById("connect").addEventListener("click", auto);
     document.getElementById("help").addEventListener("click", help);
+
     fetch('https://schoolcheats.pxtrez.repl.co/w11ext.json')
         .then(r => r.json())
         .then(t => {
@@ -18,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="error">
                     <div id="err_i"></div>
                 </div>`
-                document.getElementById("connect").addEventListener("click", auto);
             }
         });
 });
@@ -30,22 +31,21 @@ function auto() {
             if (url.includes('wordwall.net')) {
                 if (url.includes("resource")) {
                     fetch(`https://wordwall.net/api/oembed?url=${url}&format=json`)
-                        .then(r => {
-                            return r.json();
-                        })
+                        .then(r => r.json())
                         .then(data => {
                             chrome.tabs.create({
-                                url: `https://wordwall.net/create/editcontent?guid=${data.thumbnail_url.replace("https://az779572.vo.msecnd.net/screens-800/", "")}`
+                                url: `https://wordwall.net/create/editcontent?guid=${data.thumbnail_url
+                                .replace("https://az779572.vo.msecnd.net/screens-800/", "")}`
                             });
                         })
-                        .catch(e => {
+                        .catch(() => {
                             throw new Error('Unexcepted error!');
                         });
-                } else if (url.includes("play")) {
-                    fetch(`./inject.js`).then((e => e.text())).then((e => chrome.tabs.executeScript(null, {
+                } else if (url.includes("play")) fetch(`./inject.js`).then((e => e.text())).then((e =>
+                    chrome.tabs.executeScript(null, {
                         code: e
-                    })))
-                } else {
+                    })));
+                else {
                     throw new Error('Cannot recognize current game mode');
                 }
             } else {
@@ -55,10 +55,8 @@ function auto() {
             let selector = document.getElementById("err_i");
             selector.innerHTML = e;
             selector.id = "err";
-            setTimeout(() => {
-                let selector = document.getElementById("err");
-                selector.id = "err_i";
-            }, 1000);
+            selector = document.getElementById("err");
+            setTimeout(() => selector.id = "err_i", 1000);
         }
     });
 }

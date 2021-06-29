@@ -14,6 +14,8 @@ Wordwa11 is a cheat for wordwall.
 
 ## Usage
 
+You need a wordwall account to use the cheat!
+
 1. Open your wordwall test.
 
 2. Click on wordwa11 extension logo.
@@ -37,6 +39,7 @@ Wordwa11 is a cheat for wordwall.
 ## Any suggestions or bugs?
 
 create an issue
+also pull requests are welcome
 
 ## License
 
