@@ -1,16 +1,14 @@
 {
     "name": "wordwa11",
     "author": "pxtrez",
-    "description": "Works for private quizzes, also on 'play' and 'resource' modes || Made by pxtrez || Discord: pxtrez#0001.",
-    "version": "3.0",
-    "background": {
-        "content_scripts": [{
-            "matches": [
-                "*://*.wordwall.net*"
-            ],
-            "scripts": ["./src/script.js"]
-        }]
-    },
+    "description": "Wordwall answer cheat. Works for every type of quiz. Made by pxtrez#0001",
+    "version": "3.1",
+    "content_scripts": [{
+        "matches": [
+            "*://wordwall.net/*"
+        ],
+        "js": ["./src/content/content.js"]
+    }],
     "browser_action": {
         "default_icon": "./src/img/wordwa11.png",
         "default_popup": "./src/popup/popup.html",
@@ -20,8 +18,6 @@
         "128": "./src/img/wordwa11.png"
     },
     "permissions": [
-        "tabs",
-        "webRequest",
         "activeTab"
     ],
     "manifest_version": 2
