@@ -1,5 +1,8 @@
 # Wordwa11
 
+<a href="https://chrome.google.com/webstore/detail/wordwa11/maopcaegaldcohoaeeggjinpikdlddmi"><img src="https://img.shields.io/chrome-web-store/users/maopcaegaldcohoaeeggjinpikdlddmi?label=Chrome%20Users" alt="Badge"></img></a>
+
+
 Wordwa11 is a cheat for wordwall.
 
 * [Usage](#Usage)
