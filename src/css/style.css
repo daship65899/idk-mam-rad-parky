@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #52d79a;
+    --primary-text: #fff;
+    --error-color: #ee6262;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-ExtraBold.otf");
+}
+
+* {
+    font-family: "Quicksand", sans-serif;
+    color: var(--primary-text);
+    font-family: "Gilroy";
+}
+
+body {
+    background-color: #141414;
+    width: 350px;
+}
+
+div {
+    margin: 15px;
+    text-align: center;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+.title > h1 {
+    font-size: 50px;
+    margin: 15px;
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.start-btn {
+    box-shadow: var(--primary-color) 0 0 2px;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+}
+
+.start-btn:hover {
+    cursor: pointer;
+    box-shadow: var(--primary-color) 0 0 10px;
+    background-color: var(--primary-color);
+}
+
+.error {
+    background-color: var(--error-color);
+    border: 1px solid var(--error-color);
+    box-shadow: var(--error-color) 0 0 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.links > a {
+    margin: 10px;
+}

@@ -1,0 +1,16 @@
+{
+    "name": "wordwa11",
+    "author": "pxtrez",
+    "description": "Wordwall answer cheat. Works for every type of quiz. Made by pxtrez#0559",
+    "version": "3.2.0",
+    "browser_action": {
+        "default_icon": "./src/img/wordwa11.png",
+        "default_popup": "./src/html/index.html",
+        "default_title": "wordwa11"
+    },
+    "icons": {
+        "128": "./src/img/wordwa11.png"
+    },
+    "permissions": ["activeTab"],
+    "manifest_version": 2
+}

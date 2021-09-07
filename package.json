@@ -1,0 +1,27 @@
+{
+    "name": "wordwa11",
+    "version": "3.2.0",
+    "description": "Wordwall cheat",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pxtrez/wordwa11.git"
+    },
+    "keywords": [
+        "pxtrez",
+        "cheat",
+        "wordwall",
+        "wordwa11"
+    ],
+    "author": "pxtrez",
+    "license": "SEE LICENSE IN /LICENSE",
+    "bugs": {
+        "url": "https://github.com/pxtrez/wordwa11/issues"
+    },
+    "homepage": "https://github.com/pxtrez/wordwa11#readme",
+    "devDependencies": {
+        "eslint": "^7.32.0"
+    }
+}
